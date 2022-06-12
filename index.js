@@ -11,6 +11,10 @@ addEventListener("keydown", function(e){
     makeSound(e.key);
     buttonAnimation(e.key);
 })
+document.querySelector("h1").addEventListener("click", function(){
+    var audio= new Audio('ph.mp3');
+    audio.play();
+})
 function makeSound(key){
     switch(key){
         case "w":
